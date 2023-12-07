@@ -15,10 +15,10 @@ import Contact from '@/app/contact/page';
 import Education from '@/app/education/page';
 import Skills from '@/app/skills/page';
 import Social from '@/app/social/page';
-import Default from '@/app/default/page';
+
 
 function Page() {
-  const [selectedComponent, setSelectedComponent] = useState(<Default />);
+  const [selectedComponent, setSelectedComponent] = useState();
 
   const handleOptionChange = (option) => {
     switch (option) {
