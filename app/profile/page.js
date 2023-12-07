@@ -38,7 +38,6 @@ import Contact from '@/app/contact/page';
 import Education from '@/app/education/page';
 import Skills from '@/app/skills/page';
 import Social from '@/app/social/page';
-import Default from '@/app/default/page';
 import Link from 'next/link';
 import { MdAdd } from 'react-icons/md';
 import { useRouter } from 'next/navigation';
@@ -46,7 +45,7 @@ import { useRouter } from 'next/navigation';
 function Page() {
     const router = useRouter();
 
-    const [selectedComponent, setSelectedComponent] = useState(<Default />);
+    const [selectedComponent, setSelectedComponent] = useState();
 
     const handleOptionChange = (option) => {
         switch (option) {
