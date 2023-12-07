@@ -2,15 +2,9 @@ import mongoose, { Schema } from 'mongoose';
 
 const loginFormSchema = new Schema(
   {
-    firstName: String,
-    lastName: String,
-    gender: String,
-    maritalStatus: String,
-    profilePicture: {
-      data: Buffer,
-      contentType: String,
-    },
-  },
+    email: String,
+    password: String,
+     },
   {
     timestamps: true,
   }
